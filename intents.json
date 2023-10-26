@@ -1,0 +1,577 @@
+{
+    "intents": [
+
+        {
+            "tag": "google",
+            "patterns": [
+                "google",
+                "search",
+                "internet",
+		"Tìm trên google"
+	],
+            "responses": [
+                "Đang chuyển hướng tới Google..."
+            ]
+        },
+	{
+            "tag": "youtube",
+            "patterns": [
+                "youtube",
+                "search youtube",
+                "Tìm trên youtube"
+	],
+            "responses": [
+                "Đang chuyển hướng tới Youtube..."
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day",
+                "Namaste",
+                "yo"
+            ],
+            "responses": [
+                "Hello",
+                "Good to see you again",
+                "Hi there, how can I help?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{
+            "tag": "lờichào",
+            "patterns": [
+                "Xin chào",
+                "Bạn khoẻ không?",
+                "Có ai không?",
+                "Alo",
+                "Hi",
+                "Hề lố",
+                "yolo"
+            ],
+            "responses": [
+                "Chào bạn..!",
+                "Thật tốt khi gặp lại bạn.",
+                "Xin chào, Tôi có thể giúp gì cho bạn?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Get lost",
+                "Till next time",
+                "bbye"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+	{
+            "tag": "tạmbiệt",
+            "patterns": [
+                "Bye",
+                "Tạm biệt",
+                "Tôi đi nhé",
+                "pp",
+                "Hẹn gặp lại"
+            ],
+            "responses": [
+                "Gặp lại bạn sau.",
+                "Một ngày tốt lành nheee",
+                "Chào! Tìm tôi khi có thể nhé"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure",
+		"Rất vui được giúp bạn",
+		"Không có chi!!!"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered",
+                "Bạn có thể làm được gì",
+		"Hỗ trợ tôi"
+            ],
+            "responses": [
+                "Tôi được lập trình sẵn.Khả năng của tôi là: \n 1. Tôi có thể trò chuyện với bạn. Thử hỏi tôi về 1 câu chuyện cười hoặc câu đố!\n 2.Xem ngày tháng hiện tại\n 3.Tôi có thể tìm kiếm thông tin google cho bạn. Nhập google: thông tin tìm kiếm của bạn\n 4.Xem thời tiết ở bất cứ Thành phố nào!. Nhập weather: tên Thành phố\n 5.Tôi có thể lấy được 10 tin tức gần nhất của Apple. Nhập 'Latest News'\n 6.Tôi có thể lấy danh sách top 10 bài hát. Nhập 'songs'\n 7.Tôi có thể đặt báo thức cho bạn. Nhập 'set a timer: số phút muốn đặt'\n Để góp ý giúp tôi cải thiện, gửi về email '2011549769@nttu.edu.vn . Cảm ơn bạn!!"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems - the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I've lost along the way, I think to myself, maybe a career as a tour guide wasn't for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+            ],
+            "context": [
+                "jokes"
+            ]
+        },
+	{
+            "tag": "hàihước",
+            "patterns": [
+                "chuyện cười",
+                "hài",
+                "làm tôi vui",
+		"kể chuyện cười"
+            ],
+            "responses": [
+                "Một cô vợ thất vọng về tình trạng chồng hay đi làm về muộn nên tâm sự với bạn. Cô bạn khuyên: 'Thay vì nhiếc móc anh ấy, cậu hãy nói những lời ngọt ngào và đón chào anh ấy bằng một nụ hôn. Có thể anh ấy sẽ thay đổi'.Tối đó, anh chồng về muộn, cô vợ vội vàng ra mở cửa, dìu anh ta vào phòng, đắp khăn lạnh rồi cởi giày cho anh ta. Vừa nắn bóp, cô vợ vừa thì thầm vào tai chồng: 'Anh yêu, đã muộn rồi, chúng mình lên gác ngủ nhé'. Anh chồng đang xỉn trả lời: 'Ừ, thế cũng được. Đằng nào về nhà con vợ anh cũng không tha…'.",
+                "Có 15 học sinh kéo nhau ra sông. Trong đó, 5 em bị bố mẹ cấm không được tắm sông. Vậy có mấy em xuống tắm?- Cả lớp đồng thanh trả lời: Mười lăm!",
+                "Nữ thư ký nói với sếp:\"- Sếp phải tăng lương cho tôi. Tôi còn phải nuôi mấy đứa con.\"\"- Cô có mấy đứa?\"\"- Hai đứa của tôi và một đứa của mẹ chồng tôi.\"",
+                "Vừa xong bữa nhậu đầu năm với bạn bè, anh chồng ngất ngư đi về nhà. Để vợ không đoán được là mình uống rượu quá mức, anh ta quyết định đi thẳng vào phòng và ngồi đọc sách, hy vọng vợ trông thấy sẽ nghĩ là mình tỉnh táo...Vài phút sau, cô vợ vào và hỏi:\"- Anh đang làm gì vậy?\"\"- Đọc sách.\"\"- Vợ anh ta thét lên: Đồ điên! Đóng vali lại và ngủ đi!\""
+            ],
+            "context": [
+                "cười"
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Who are you",
+                "what are you"
+            ],
+            "responses": [
+                "I am Ted, a Deep-Learning chatbot"
+            ]
+        },
+	{
+            "tag": "dòhỏi",
+            "patterns": [
+                "Bạn có biết kể chuyện cười không ?",
+                "Bạn có thể kể chuyện cười ?",
+		"Chơi đố đáp không?",
+		"Bạn có câu đố đáp nào không ?"
+		
+            ],
+            "responses": [
+                "Chắc chắn rồi, cứ hỏi tôi !"
+            ]
+        },
+	{
+            "tag": "danhtính",
+            "patterns": [
+                "Bạn là ai?",
+                "Bạn tên gì?",
+		"Tên của bạn là gì?"
+            ],
+            "responses": [
+                "Tôi là Ted, là một Chatbot học sâu."
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "weather today?",
+                "weather",
+                "temperature",
+                "tell me the weather","day","How weather is today"
+            ],
+            "responses": [
+                "Weather..."
+            ]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "What is the time",
+                "what is the date",
+                "date",
+                "time",
+                "tell me the date","day","what day is is today"
+            ],
+            "responses": [
+                "Date and Time"
+            ]
+        },
+	{
+            "tag": "thoigian",
+            "patterns": [
+                "mấy giờ rồi?",
+                "Hôm nay ngày mấy?",
+                "ngày",
+                "giờ",
+                "today"
+            ],
+            "responses": [
+                "Bây giờ là..."
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "Whats up",
+                "Wazzup",
+                "How are you",
+                "sup","How you doing"
+            ],
+            "responses": [
+                "All good..What about you?"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+                "who designed you",
+                "who programmed you"
+            ],
+            "responses": [
+                "I was made by Gia Heo."
+            ]
+        },
+	{
+            "tag": "laptrinh",
+            "patterns": [
+                "Ai tạo ra bạn?",
+                "Ai thiết kế ra bạn?",
+                "Ai lập trình ra bạn?"
+            ],
+            "responses": [
+                "Tôi được tạo ra bởi Gia Heo."
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                
+                "you are dumb",
+                
+                "shut up",
+                "idiot"
+            ],
+            "responses": [
+                "Well that hurts :("
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing",
+                "what are you upto"
+            ],
+            "responses": [
+                "Talking to you, of course!"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome",
+                "Great",
+                "I know",
+                "ok",
+                "yeah"
+            ],
+            "responses": [
+                "Yeah!"
+            ]
+        },
+        
+        {
+            "tag": "weather",
+            "patterns": [
+                "temperature",
+                "weather",
+                "how hot is it"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "giaheo",
+            "patterns": [
+                "gia heo?",
+                "ai là heo",
+                "gia là ai",
+                "Gia heo ?"
+            ],
+            "responses": [
+                "Github: https://github.com/Karan-Malik"
+            ],
+	    "context": [
+                "heo"
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "contact developer",
+                "contact giaheo",
+                "contact programmer",
+                "contact creator"
+	    ],
+            "responses": [
+                "You can contact my creator at his Facebook profile : https://www.facebook.com/gia.heo"
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good"
+            ],
+            "responses": [
+                "Thank you!"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "news",
+            "patterns": [
+                "news",
+                "latest news",
+                "india news"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "inspire",
+            "patterns": [
+                "who inspires you",
+                "who is your inspiration",
+                "who motivates you"
+            ],
+            "responses": [
+                "Personally, I find Ironman very inspiring. I might not be very fair though.."
+            ]
+        },
+	{
+            "tag": "ai",
+            "patterns": [
+                "who is...?",
+                "who the...?",
+                "who is the best ?",
+		"người đó là ai?",
+		"Ai là...?"
+            ],
+            "responses": [
+                "Tôi không chắc là tôi biết, nhưng tôi có thể tìm kiếm trên google cho bạn.."
+            ]
+        },
+        {
+            "tag": "cricket",
+            "patterns": [
+                "current cricket matches",
+                "cricket score"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "song",
+            "patterns": [
+                "top songs",
+                "best songs",
+                "hot songs",
+                " top 10 songs",
+                "top ten songs"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine","good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },
+        {
+            "tag": "timer",
+            "patterns": [
+                "set a timer"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        
+        {
+            "tag": "suggest",
+            "patterns": [
+                "you are useless","useless","suggest","suggestions","you are bad"
+            ],
+            "responses": [
+                "Please mail your suggestions to 2011549769@nttu.edu.vn. Thank you for helping me improve!"
+            ]
+        },
+        {
+	    "tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question",
+                "Riddle"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                "How do you make the number one disappear?.....Add the letter G and it's 'gone'!",
+                " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                "What can be caught but never thrown?.....A cold!",
+                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                "Why can't a bike stand on it's own?.....It is two-tired."
+            ],
+            "context": [
+                "riddles"
+            ]
+        },
+	{
+	    "tag": "câuđố",
+            "patterns": [
+                "hỏi tôi một câu đố",
+                "hỏi tôi điều gì đó?",
+                "hỏi đố"
+            ],
+            "responses": [
+                "Hai thứ bạn không được ăn vào bữa sáng là gì?.....Bữa trưa và Bữa tối ^^!",
+                "Từ nào được đánh vần 'sai' trong từ điển?.....Sai :v",
+                "Làm sao một cô gái có thể chịu đựng được 25 ngày không ngủ?.....Cô ấy ngủ vào buổi tối!",
+                "Làm thế nào để cho số một biến mất?.....Đổi dấu ' . ' thành ' ' ' là xong!",
+                "Bạn sẽ thực sự tìm thấy gì ở cuối mỗi cầu vòng?.....Chữ 'g' :)))",
+                "Cái gì đó có thể bắt được nhưng không ném được?.....Cảm xúc :3",
+                "Cái gì có 5 ngón tay nhưng không phải vật sống?.....Bao tay!",
+                "What 5-letter word becomes shorter when you add two letters to it?.....Short"
+            ],
+            "context": [
+                "đố"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you","when were you made","what is your age"
+            ],
+            "responses": [
+                "I was made in 2023, if that's what you are asking!"
+            ]
+        },
+	{
+            "tag": "tuổi",
+            "patterns": [
+                "Bạn bao nhiêu tuổi?","Bạn sinh ra khi nào?","Tuổi của bạn là bao nhiêu?",
+		"Bạn được tạo ra khi nào?"
+            ],
+            "responses": [
+                "Tôi được tạo ra năm 2023, nếu đó là những gì bạn muốn hỏi!"
+            ]
+        }
+    ]
+}
