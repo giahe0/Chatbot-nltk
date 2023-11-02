@@ -85,8 +85,8 @@ intents = json.loads(open('intents.json',encoding="utf-8").read())
 words = pickle.load(open('model/words.pkl','rb'))
 classes = pickle.load(open('model/classes.pkl','rb'))
 
-
-#Predict
+#Bỏ comment bên dưới nếu muốn test chạy trực tiếp.
+#Chức năng & dự đoán.
 # def clean_up(sentence):
 #     sentence_words=nltk.word_tokenize(sentence)
 #     sentence_words=[ lemmatizer.lemmatize(word.lower()) for word in sentence_words]
@@ -180,11 +180,6 @@ classes = pickle.load(open('model/classes.pkl','rb'))
     #         print(i + 1, results[i][0])
     #         print(results[i][1],'\n')
             
-    # if tag=='cricket':
-    #     c = Cricbuzz()
-    #     matches = c.matches()
-    #     for match in matches:
-    #         print(match['srs'],' ',match['mnum'],' ',match['status'])
     
     # if tag=='song':
     #     chart=billboard.ChartData('hot-100')
@@ -221,7 +216,7 @@ classes = pickle.load(open('model/classes.pkl','rb'))
 print('Giúp tôi học thêm?')
 tag=input('Nhập danh mục chung của câu hỏi hoặc nhập E để thoát: ')
 flag=-1
-if tag in ('E'):
+if tag in ('E','e'):
     sys.exit()
 else:
     for i in range(len(intents['intents'])):

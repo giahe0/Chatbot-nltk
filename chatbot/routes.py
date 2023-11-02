@@ -17,12 +17,12 @@ import billboard
 import time
 from pygame import mixer
 import webbrowser
-
+import googlesearch
 from nltk.stem import WordNetLemmatizer
 lemmatizer=WordNetLemmatizer()
 
 
-#Predict
+#Chức năng & dự đoán
 def clean_up(sentence):
     sentence_words=nltk.word_tokenize(sentence)
     sentence_words=[ lemmatizer.lemmatize(word.lower()) for word in sentence_words]
@@ -82,9 +82,12 @@ def get_response(return_list,intents_json,text):
             if 'main' in response:
                 pres_temp = round(response['main']['temp'] - 273, 2)
                 feels_temp = round(response['main']['feels_like'] - 273, 2)
-                humi = round(response['main']['huidity'])
+                humi = response['main']['humidity']
                 cond = response['weather'][0]['main']
-                x += 'Nhiệt độ hiện tại: '+' '+str(pres_temp)+' '+'độ C\n'+'Cảm giác như:'+' '+str(feels_temp)+' '+'độ C\n'+'Độ ẩm là:'+' '+str(humi)+' '+'%\n'+str(cond)
+                x += 'Nhiệt độ hiện tại: ' + str(pres_temp) + ' °C\n'
+                x += 'Cảm giác như: ' + str(feels_temp) + ' °C\n'
+                x += 'Độ ẩm là: ' + str(humi) + '%\n'
+                x += 'Tình trạng thời tiết: ' + cond
                 print(x)
                 return x, 'weather'
             else:

@@ -7,7 +7,7 @@
                 "google",
                 "search",
                 "internet",
-		"Tìm trên google"
+		        "Tìm trên google"
 	],
             "responses": [
                 "Đang chuyển hướng tới Google..."
@@ -60,7 +60,7 @@
             "responses": [
                 "Chào bạn..!",
                 "Thật tốt khi gặp lại bạn.",
-                "Xin chào, Tôi có thể giúp gì cho bạn?"
+                "Xin chào, Tôi khoẻ tôi có thể giúp gì cho bạn?"
             ],
             "context": [
                 ""
@@ -97,7 +97,7 @@
             "responses": [
                 "Gặp lại bạn sau.",
                 "Một ngày tốt lành nheee",
-                "Chào! Tìm tôi khi có thể nhé"
+                "Chào bạn! Tìm tôi khi có thể nhé"
             ],
             "context": [
                 ""
@@ -116,8 +116,8 @@
                 "Happy to help!",
                 "Any time!",
                 "My pleasure",
-		"Rất vui được giúp bạn",
-		"Không có chi!!!"
+		        "Rất vui được giúp bạn",
+		        "Không có chi!!!"
             ],
             "context": [
                 ""
@@ -135,6 +135,18 @@
                 ""
             ]
         },
+	{
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Xin lỗi, tôi không hiểu câu hỏi của bạn !",
+                "Làm ơn cung cấp thêm thông tin về câu hỏi",
+                "Không chắc là tôi hiểu...."
+            ],
+            "context": [
+                ""
+            ]
+        },
         {
             "tag": "options",
             "patterns": [
@@ -144,7 +156,7 @@
                 "How you can be helpful?",
                 "What support is offered",
                 "Bạn có thể làm được gì",
-		"Hỗ trợ tôi"
+		        "Hỗ trợ tôi"
             ],
             "responses": [
                 "Tôi được lập trình sẵn.Khả năng của tôi là: \n 1. Tôi có thể trò chuyện với bạn. Thử hỏi tôi về 1 câu chuyện cười hoặc câu đố!\n 2.Xem ngày tháng hiện tại\n 3.Tôi có thể tìm kiếm thông tin google cho bạn. Nhập google: thông tin tìm kiếm của bạn\n 4.Xem thời tiết ở bất cứ Thành phố nào!. Nhập weather: tên Thành phố\n 5.Tôi có thể lấy được 10 tin tức gần nhất của Apple. Nhập 'Latest News'\n 6.Tôi có thể lấy danh sách top 10 bài hát. Nhập 'songs'\n 7.Tôi có thể đặt báo thức cho bạn. Nhập 'set a timer: số phút muốn đặt'\n Để góp ý giúp tôi cải thiện, gửi về email '2011549769@nttu.edu.vn . Cảm ơn bạn!!"
@@ -184,7 +196,7 @@
                 "chuyện cười",
                 "hài",
                 "làm tôi vui",
-		"kể chuyện cười"
+		        "kể chuyện cười"
             ],
             "responses": [
                 "Một cô vợ thất vọng về tình trạng chồng hay đi làm về muộn nên tâm sự với bạn. Cô bạn khuyên: 'Thay vì nhiếc móc anh ấy, cậu hãy nói những lời ngọt ngào và đón chào anh ấy bằng một nụ hôn. Có thể anh ấy sẽ thay đổi'.Tối đó, anh chồng về muộn, cô vợ vội vàng ra mở cửa, dìu anh ta vào phòng, đắp khăn lạnh rồi cởi giày cho anh ta. Vừa nắn bóp, cô vợ vừa thì thầm vào tai chồng: 'Anh yêu, đã muộn rồi, chúng mình lên gác ngủ nhé'. Anh chồng đang xỉn trả lời: 'Ừ, thế cũng được. Đằng nào về nhà con vợ anh cũng không tha…'.",
@@ -211,8 +223,10 @@
             "patterns": [
                 "Bạn có biết kể chuyện cười không ?",
                 "Bạn có thể kể chuyện cười ?",
-		"Chơi đố đáp không?",
-		"Bạn có câu đố đáp nào không ?"
+		        "Chơi đố đáp không?",
+		        "Bạn có câu đố đáp nào không ?",
+                "Bạn có thể tìm kiếm thông tin không?",
+                "Tìm kiếm thông tin được không ?"
 		
             ],
             "responses": [
@@ -224,7 +238,7 @@
             "patterns": [
                 "Bạn là ai?",
                 "Bạn tên gì?",
-		"Tên của bạn là gì?"
+		        "Tên của bạn là gì?"
             ],
             "responses": [
                 "Tôi là Ted, là một Chatbot học sâu."
@@ -301,7 +315,7 @@
                 "who programmed you"
             ],
             "responses": [
-                "I was made by Gia Heo."
+                "I was made by <a target='_blank' href ='https://github.com/giahe0'>Gia Heo</a>. "
             ]
         },
 	{
@@ -312,7 +326,7 @@
                 "Ai lập trình ra bạn?"
             ],
             "responses": [
-                "Tôi được tạo ra bởi Gia Heo."
+                "Tôi được tạo ra bởi <a target='_blank' href ='https://github.com/giahe0'>Gia Heo</a>."
             ]
         },
         {
@@ -372,7 +386,7 @@
                 "Gia heo ?"
             ],
             "responses": [
-                "Github: https://github.com/Karan-Malik"
+                "Đây là biệt danh của một người, có thể tôi biết <a target='_blank' href ='https://github.com/giahe0'>Gia Heo</a>"
             ],
 	    "context": [
                 "heo"
@@ -387,7 +401,20 @@
                 "contact creator"
 	    ],
             "responses": [
-                "You can contact my creator at his Facebook profile : https://www.facebook.com/gia.heo"
+                "You can contact my creator at <a href=mailto:2011549769@nttu.edu.vn?subject='hỗ trợ Chatbot'>here</a> or his Facebook profile : <a target='_blank' href='https://www.facebook.com/gia.heo'>Gia Huy</a>."
+            ]
+        },
+	{
+            "tag": "lienhe",
+            "patterns": [
+                "liên hệ",
+                "liên hệ với nhà phát triển",
+                "liên hệ với lập trình viên",
+                "liên hệ gặp ai?",
+		        "liên hệ với ai?"
+	    ],
+            "responses": [
+                "Bạn có thể liên hệ người sáng tạo tại <a href='mailto:<giaheo>2011549769@nttu.edu.vn?subject='hỗ trợ Chatbot''>đây</a> hoặc qua Facebook của anh ấy : <a target='_blank' href='https://www.facebook.com/gia.heo'>Gia Huy</a>. "
             ]
         },
         {
@@ -450,11 +477,16 @@
                 "who is...?",
                 "who the...?",
                 "who is the best ?",
-		"người đó là ai?",
-		"Ai là...?"
+		        "người đó là ai?",
+		        "Ai là    ?",
+		        "là ai    ?"
             ],
             "responses": [
-                "Tôi không chắc là tôi biết, nhưng tôi có thể tìm kiếm trên google cho bạn.."
+                "Tôi không chắc là tôi biết, nhưng tôi có thể tìm kiếm trên <a target='_blank' href='https://www.google.com/'>google</a> cho bạn..\nHoặc nhập 'google: nội dung tìm kiếm của bạn'."
+            ],
+	    "context": [
+                "who",
+		        "là ai"
             ]
         },
         {
@@ -564,10 +596,41 @@
             ]
         },
 	{
+            "tag": "gioithieu",
+            "patterns": [
+                "nguyễn tất thành","giới thiệu đại học nguyễn tất thành","đại học nguyễn tất thành",
+		        "nguyễn tất thành university","information Nguyễn tất thành university"
+            ],
+            "responses": [
+                "Trường ĐH Nguyễn Tất Thành là “trường đại học đổi mới sáng tạo” đáp ứng nhu cầu giáo dục đại học đại chúng thông qua việc tạo lập một môi trường học tập tích cực và trải nghiệm thực tiễn cho mọi sinh viên trang bị cho người học năng lực tự học tinh thần sáng tạo khởi nghiệp có trách nhiệm với cộng đồng hội nhập với khu vực và toàn cầu."
+            ]
+        },
+	{
+            "tag": "cackhoa",
+            "patterns": [
+                "Liệt kê các khoa","Gồm những khoa nào?","ĐH Nguyễn tất thành có khoa nào",
+		        "ĐH Nguyễn Tất Thành dạy những gì?"
+            ],
+            "responses": [
+                "Đây là một số Khoa\nKhoa Dược\nKhoa Y\nKhoa Điều dưỡng\nKhoa Kỹ thuật Xét nghiệm Y học\nKhoa Công nghệ sinh học\nKhoa Công nghệ Sinh học\nKhoa Kỹ thuật Công nghệ\nKhoa Kiến trúc Nội thất\nKhoa Kỹ thuật Xây dựng...v.v"
+            ]
+        },
+	{
+            "tag": "khoavien",
+            "patterns": [
+                "ĐH Nguyễn Tất Thành có mấy khoa","Các khoa của ĐH Nguyễn tất thành","ĐH nguyễn tất thành gồm các khoa nào",
+		        "Faculties of nguyễn tất thành university","faculties","Có bao nhiêu giảng viên"
+            ],
+            "responses": [
+                "Đại học Nguyễn Tất Thành có 21 khoa",
+		        "Có 1179 giảng viên, trong đó 792 giảng viên có bằng Thạc sỹ và 320 giảng viên có bằng tiến sỹ."
+            ]
+        },
+	{
             "tag": "tuổi",
             "patterns": [
                 "Bạn bao nhiêu tuổi?","Bạn sinh ra khi nào?","Tuổi của bạn là bao nhiêu?",
-		"Bạn được tạo ra khi nào?"
+		        "Bạn được tạo ra khi nào?"
             ],
             "responses": [
                 "Tôi được tạo ra năm 2023, nếu đó là những gì bạn muốn hỏi!"
