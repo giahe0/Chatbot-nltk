@@ -65,36 +65,6 @@ def get_response(return_list,intents_json,text):
         x+=str(dt.strftime("%H:%M:%S"))
         return x,'datetime'
 
-    if tag=='weather':
-        x=''
-        api_key = 'f756e57e80ff42a88e9445d48c46a597'
-        base_url = "http://api.openweathermap.org/data/2.5/weather?q="
-
-        city_name = text.split(':')[1].strip()
-        
-        complete_url = f"{base_url}{city_name}&appid={api_key}"
-
-        response = requests.get(complete_url)
-        
-        if response.status_code == 200:
-            response = response.json()
-
-            if 'main' in response:
-                pres_temp = round(response['main']['temp'] - 273, 2)
-                feels_temp = round(response['main']['feels_like'] - 273, 2)
-                humi = response['main']['humidity']
-                cond = response['weather'][0]['main']
-                x += 'Nhiệt độ hiện tại: ' + str(pres_temp) + ' °C\n'
-                x += 'Cảm giác như: ' + str(feels_temp) + ' °C\n'
-                x += 'Độ ẩm là: ' + str(humi) + '%\n'
-                x += 'Tình trạng thời tiết: ' + cond
-                print(x)
-                return x, 'weather'
-            else:
-                print('Không có thông tin thời tiết nơi bạn chọn.')
-        else:
-            print(f'Error: {response.status_code}')
-
     if tag=='news':
         main_url = ('http://newsapi.org/v2/everything?'
 			'q=Apple&'
@@ -102,15 +72,10 @@ def get_response(return_list,intents_json,text):
 			'apiKey=6b9f13b21e1b4eec9bd9e0c722f07b74')
         open_news_page = requests.get(main_url).json()
         article = open_news_page["articles"]
-        results = []
         x=''
-        for ar in article:
-            results.append([ar["title"],ar["url"]])
-
         for i in range(10):
-            x+=(str(i + 1))
-            x+='. '+str(results[i][0])
-            x+=(str(results[i][1]))
+            new = article[i]
+            x+=str(i + 1)+'. '+"<a href=\"" + str(new["url"]) + "\">"+ str(new["title"]) + "</a>"
             if i!=9:
                 x+='\n'
 
@@ -121,7 +86,7 @@ def get_response(return_list,intents_json,text):
         x='The top 10 songs at the moment are: \n'
         for i in range(10):
             song=chart[i]
-            x+=str(i+1)+'. '+str(song.title)+'- '+str(song.artist)
+            x+=str(i+1)+'.'+str(song.title)+' - '+str(song.artist)
             if i!=9:
                 x+='\n'
         return x,'songs'
@@ -129,7 +94,7 @@ def get_response(return_list,intents_json,text):
     if tag=='timer':
         mixer.init()
         x=text.split(':')[1]
-        time.sleep(float(x)*60)
+        time.sleep(float(x)*1)
         mixer.music.load('Handbell-ringing-sound-effect.mp3')
         mixer.music.play()
         x = 'Timer ringing...'
@@ -143,6 +108,9 @@ def get_response(return_list,intents_json,text):
            return('Hôm nay là ngày %d tháng %d năm %d'%(now.day,now.month,now.year)),'thoigian'        
        else:
            return('Ted chưa hiểu ý của bạn.?'),'thoigian'
+    
+    
+
        
     list_of_intents= intents_json['intents']
     for i in list_of_intents:

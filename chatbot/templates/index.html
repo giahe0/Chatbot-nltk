@@ -7,7 +7,6 @@
 	<title>Chat with Ted</title>
 	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaLVVhsnjFZ4bBxzbGve1L86hP-3tDpfNNJw">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<style>
 		:root {
@@ -238,10 +237,6 @@
 
 	<script>
 
-		function play() {
-			var audio = new Audio('Handbell-ringing-sound-effect.mp3');
-			audio.play();
-		}
 
 		const msgerForm = get(".msger-inputarea");
 		const msgerInput = get(".msger-input");
@@ -265,13 +260,51 @@
 				window.open(search)
 			}
 
-			if (!msgText) return;
-			if ((temp[0].toLowerCase()).trim() == 'set a timer') { play() }
+			
+			if ((temp[0].toLowerCase()).trim() == 'set timer') {
+				var count = temp.slice(1).join(':').trim(); // Set the initial count
+				var counter = setInterval(timer, 1000); // Set the interval
+				function timer() {
+					count = count - 1;
+					if (count <= 0) {
+						clearInterval(counter);
+					}
+					appendMessage(BOT_NAME, BOT_IMG, "left", "Thời gian còn lại: " + count + " seconds");
+				}
+			}
+			if ((temp[0].toLowerCase()).trim() == 'check weather') {
+				var api_key = 'f756e57e80ff42a88e9445d48c46a597';
+				var base_url = "http://api.openweathermap.org/data/2.5/weather?q=";
 
-			if ((temp[0].toLowerCase()).trim() == 'google')
-			//   {search='https://www.google.com/search?q=' + temp[1].trim()
-			//   window.open(search)}
-			{
+				var city_name = temp.slice(1).join(':').trim();
+
+				var complete_url = base_url + city_name + '&appid=' + api_key;
+
+				fetch(complete_url)
+					.then(response => response.json())
+					.then(data => {
+						if (data.main) {
+							var pres_temp = (data.main.temp - 273.15).toFixed(2);  // Chuyển đổi nhiệt độ từ Kelvin sang Celsius
+							var feels_temp = (data.main.feels_like - 273.15).toFixed(2);
+							var humi = data.main.humidity;
+							var cond = data.weather[0].main;
+
+							appendMessage(BOT_NAME, BOT_IMG, "left",'Nhiệt độ hiện tại: ' + pres_temp + ' °C' +"<br>"+
+																	'Cảm giác như: ' + feels_temp + ' °C' +"<br>"+ 
+																	'Độ ẩm là: ' + humi + '%' +"<br>"+ 
+																	'Tình trạng thời tiết: ' + cond);
+							// Trả kết quả về nơi bạn cần xử lý dữ liệu.
+						} else {
+							appendMessage(BOT_NAME, BOT_IMG, "left", "Không có thông tin thời tiết nơi bạn chọn");
+							// Trả kết quả nếu không có dữ liệu thời tiết.
+						}
+					})
+					.catch(error => {
+						console.log('Error: ' + error);
+						// Xử lý lỗi nếu có lỗi khi gọi API.
+					});
+			}
+			if ((temp[0].toLowerCase()).trim() == 'google') {
 				const query = temp.slice(1).join(':').trim();
 				const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
 
@@ -283,7 +316,7 @@
 							data.items.forEach(result => {
 								const title = result.title;
 								const link = result.link;
-								appendMessage(BOT_NAME, BOT_IMG, "left", title + " - " + link);
+								appendMessage(BOT_NAME, BOT_IMG, "left", "<a href=\"" + link + "\">"+ title + "</a>");
 							});
 						} else {
 							// Handle the case where no results are found
@@ -294,6 +327,7 @@
 						console.error('Error fetching data from Google Custom Search API:', error);
 					});
 			}
+			else 
 			appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
 			msgerInput.value = "";
 			botResponse(msgText);
@@ -325,7 +359,8 @@
 				console.log(rawText);
 				console.log(data);
 				msgText = data;
-				msgText = msgText.split("\n")
+				msgText = msgText.split('\n');	
+				
 				var i;
 				for (i = 0; i < msgText.length; i++) {
 					appendMessage(BOT_NAME, BOT_IMG, "left", msgText[i]);
@@ -356,7 +391,8 @@
 			href="https://github.com/giahe0">NTGH</a> ,Copyright &copy; <a target='_blank'
 			href="https://karan-malik.github.io">Karan Malik</a>
 		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project Github: <a
-			target="_blank" href="https://github.com/giahe0/Chatbot-nltk">Chatbot</a> </p>
+			target="_blank" href="https://github.com/giahe0/Chatbot-nltk">Chatbot</a>
+	</p>
 
 </body>
 

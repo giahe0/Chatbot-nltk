@@ -1,25 +1,24 @@
 {
     "intents": [
-
         {
             "tag": "google",
             "patterns": [
                 "google",
                 "search",
                 "internet",
-		        "Tìm trên google"
-	],
+                "Tìm trên google","Tìm"
+            ],
             "responses": [
                 "Đang chuyển hướng tới Google..."
             ]
         },
-	{
+        {
             "tag": "youtube",
             "patterns": [
                 "youtube",
                 "search youtube",
                 "Tìm trên youtube"
-	],
+            ],
             "responses": [
                 "Đang chuyển hướng tới Youtube..."
             ]
@@ -28,8 +27,8 @@
             "tag": "greeting",
             "patterns": [
                 "Hi there",
-                "How are you",
-                "Is anyone there?",
+                "How are you","how are u",
+                "Is anyone there?","how are u today?","how are you today?",
                 "Hey",
                 "Hola",
                 "Hello",
@@ -46,11 +45,11 @@
                 ""
             ]
         },
-	{
+        {
             "tag": "lờichào",
             "patterns": [
                 "Xin chào",
-                "Bạn khoẻ không?",
+                "Bạn khoẻ không?","hôm nay bạn thế nào?",
                 "Có ai không?",
                 "Alo",
                 "Hi",
@@ -85,7 +84,7 @@
                 ""
             ]
         },
-	{
+        {
             "tag": "tạmbiệt",
             "patterns": [
                 "Bye",
@@ -116,8 +115,8 @@
                 "Happy to help!",
                 "Any time!",
                 "My pleasure",
-		        "Rất vui được giúp bạn",
-		        "Không có chi!!!"
+                "Rất vui được giúp bạn",
+                "Không có chi!!!"
             ],
             "context": [
                 ""
@@ -135,7 +134,7 @@
                 ""
             ]
         },
-	{
+        {
             "tag": "noanswer",
             "patterns": [],
             "responses": [
@@ -156,16 +155,15 @@
                 "How you can be helpful?",
                 "What support is offered",
                 "Bạn có thể làm được gì",
-		        "Hỗ trợ tôi"
+                "Hỗ trợ tôi"
             ],
             "responses": [
-                "Tôi được lập trình sẵn.Khả năng của tôi là: \n 1. Tôi có thể trò chuyện với bạn. Thử hỏi tôi về 1 câu chuyện cười hoặc câu đố!\n 2.Xem ngày tháng hiện tại\n 3.Tôi có thể tìm kiếm thông tin google cho bạn. Nhập google: thông tin tìm kiếm của bạn\n 4.Xem thời tiết ở bất cứ Thành phố nào!. Nhập weather: tên Thành phố\n 5.Tôi có thể lấy được 10 tin tức gần nhất của Apple. Nhập 'Latest News'\n 6.Tôi có thể lấy danh sách top 10 bài hát. Nhập 'songs'\n 7.Tôi có thể đặt báo thức cho bạn. Nhập 'set a timer: số phút muốn đặt'\n Để góp ý giúp tôi cải thiện, gửi về email '2011549769@nttu.edu.vn . Cảm ơn bạn!!"
+                "Tôi được lập trình sẵn.Khả năng của tôi là: <br> 1. Tôi có thể trò chuyện với bạn. Thử hỏi tôi về 1 câu chuyện cười hoặc câu đố!<br> 2. Xem ngày tháng hiện tại<br> 3. Tôi có thể tìm kiếm thông tin google cho bạn. Nhập google: thông tin tìm kiếm của bạn<br> 4. Xem thời tiết ở bất cứ Thành phố nào!. Nhập check weather: tên Thành phố<br> 5. Tôi có thể lấy được 10 tin tức gần nhất của Apple. Nhập 'News'<br> 6. Tôi có thể lấy danh sách top 10 bài hát. Nhập 'songs'<br> 7. Tôi có thể đặt báo thức cho bạn. Nhập 'set timer: số giây muốn đặt'<br> Để góp ý giúp tôi cải thiện, gửi về email '2011549769@nttu.edu.vn . Cảm ơn bạn!!"
             ],
             "context": [
                 ""
             ]
         },
-        
         {
             "tag": "jokes",
             "patterns": [
@@ -179,7 +177,7 @@
                 "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
                 "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
                 "I own the world's worst thesaurus. Not only is it awful, it's awful.",
-                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What did the traffic light say to the car?Don't look now, I'm changing.",
                 "What do you call a snowman with a suntan? A puddle.",
                 "How does a penguin build a house? Igloos it together",
                 "I went to see the doctor about my short-term memory problems - the first thing he did was make me pay in advance",
@@ -190,19 +188,19 @@
                 "jokes"
             ]
         },
-	{
-            "tag": "hàihước",
+        {
+            "tag": "hài hước",
             "patterns": [
                 "chuyện cười",
                 "hài",
                 "làm tôi vui",
-		        "kể chuyện cười"
+                "kể chuyện cười"
             ],
             "responses": [
-                "Một cô vợ thất vọng về tình trạng chồng hay đi làm về muộn nên tâm sự với bạn. Cô bạn khuyên: 'Thay vì nhiếc móc anh ấy, cậu hãy nói những lời ngọt ngào và đón chào anh ấy bằng một nụ hôn. Có thể anh ấy sẽ thay đổi'.Tối đó, anh chồng về muộn, cô vợ vội vàng ra mở cửa, dìu anh ta vào phòng, đắp khăn lạnh rồi cởi giày cho anh ta. Vừa nắn bóp, cô vợ vừa thì thầm vào tai chồng: 'Anh yêu, đã muộn rồi, chúng mình lên gác ngủ nhé'. Anh chồng đang xỉn trả lời: 'Ừ, thế cũng được. Đằng nào về nhà con vợ anh cũng không tha…'.",
-                "Có 15 học sinh kéo nhau ra sông. Trong đó, 5 em bị bố mẹ cấm không được tắm sông. Vậy có mấy em xuống tắm?- Cả lớp đồng thanh trả lời: Mười lăm!",
-                "Nữ thư ký nói với sếp:\"- Sếp phải tăng lương cho tôi. Tôi còn phải nuôi mấy đứa con.\"\"- Cô có mấy đứa?\"\"- Hai đứa của tôi và một đứa của mẹ chồng tôi.\"",
-                "Vừa xong bữa nhậu đầu năm với bạn bè, anh chồng ngất ngư đi về nhà. Để vợ không đoán được là mình uống rượu quá mức, anh ta quyết định đi thẳng vào phòng và ngồi đọc sách, hy vọng vợ trông thấy sẽ nghĩ là mình tỉnh táo...Vài phút sau, cô vợ vào và hỏi:\"- Anh đang làm gì vậy?\"\"- Đọc sách.\"\"- Vợ anh ta thét lên: Đồ điên! Đóng vali lại và ngủ đi!\""
+                "Một cô vợ thất vọng về tình trạng chồng hay đi làm về muộn nên tâm sự với bạn.<br>Cô bạn khuyên: 'Thay vì nhiếc móc anh ấy, cậu hãy nói những lời ngọt ngào và đón chào anh ấy bằng một nụ hôn. Có thể anh ấy sẽ thay đổi'.<br>Tối đó, anh chồng về muộn, cô vợ vội vàng ra mở cửa, dìu anh ta vào phòng, đắp khăn lạnh rồi cởi giày cho anh ta. Vừa nắn bóp, cô vợ vừa thì thầm vào tai chồng:<br> 'Anh yêu, đã muộn rồi, chúng mình lên gác ngủ nhé'.<br> Anh chồng đang xỉn trả lời: <br>'Ừ, thế cũng được. Đằng nào về nhà con vợ anh cũng không tha…'.",
+                "Có 15 học sinh kéo nhau ra sông. Trong đó, 5 em bị bố mẹ cấm không được tắm sông.<br>Vậy có mấy em xuống tắm?<br>- Cả lớp đồng thanh trả lời: Mười lăm!",
+                "Nữ thư ký nói với sếp: <br> - Sếp phải tăng lương cho tôi. Tôi còn phải nuôi mấy đứa con. <br>- Cô có mấy đứa? <br> - Hai đứa của tôi và một đứa của mẹ chồng tôi.",
+                "Vừa xong bữa nhậu đầu năm với bạn bè, anh chồng ngất ngư đi về nhà. Để vợ không đoán được là mình uống rượu quá mức, anh ta quyết định đi thẳng vào phòng và ngồi đọc sách, hy vọng vợ trông thấy sẽ nghĩ là mình tỉnh táo...Vài phút sau, cô vợ vào và hỏi:<br>- Anh đang làm gì vậy? <br>- Đọc sách. <br>- Vợ anh ta thét lên: Đồ điên! Đóng vali lại và ngủ đi!"
             ],
             "context": [
                 "cười"
@@ -218,44 +216,32 @@
                 "I am Ted, a Deep-Learning chatbot"
             ]
         },
-	{
-            "tag": "dòhỏi",
+        {
+            "tag": "dò hỏi",
             "patterns": [
                 "Bạn có biết kể chuyện cười không ?",
                 "Bạn có thể kể chuyện cười ?",
-		        "Chơi đố đáp không?",
-		        "Bạn có câu đố đáp nào không ?",
+                "Chơi đố đáp không?",
+                "Bạn có câu đố đáp nào không ?",
                 "Bạn có thể tìm kiếm thông tin không?",
                 "Tìm kiếm thông tin được không ?"
-		
             ],
             "responses": [
                 "Chắc chắn rồi, cứ hỏi tôi !"
             ]
         },
-	{
-            "tag": "danhtính",
+        {
+            "tag": "danh tính",
             "patterns": [
                 "Bạn là ai?",
                 "Bạn tên gì?",
-		        "Tên của bạn là gì?"
+                "Tên của bạn là gì?"
             ],
             "responses": [
                 "Tôi là Ted, là một Chatbot học sâu."
             ]
         },
-        {
-            "tag": "weather",
-            "patterns": [
-                "weather today?",
-                "weather",
-                "temperature",
-                "tell me the weather","day","How weather is today"
-            ],
-            "responses": [
-                "Weather..."
-            ]
-        },
+      
         {
             "tag": "datetime",
             "patterns": [
@@ -263,13 +249,15 @@
                 "what is the date",
                 "date",
                 "time",
-                "tell me the date","day","what day is is today"
+                "tell me the date",
+                "day",
+                "what day is is today"
             ],
             "responses": [
                 "Date and Time"
             ]
         },
-	{
+        {
             "tag": "thoigian",
             "patterns": [
                 "mấy giờ rồi?",
@@ -288,7 +276,8 @@
                 "Whats up",
                 "Wazzup",
                 "How are you",
-                "sup","How you doing"
+                "sup",
+                "How you doing"
             ],
             "responses": [
                 "All good..What about you?"
@@ -318,7 +307,7 @@
                 "I was made by <a target='_blank' href ='https://github.com/giahe0'>Gia Heo</a>. "
             ]
         },
-	{
+        {
             "tag": "laptrinh",
             "patterns": [
                 "Ai tạo ra bạn?",
@@ -332,9 +321,7 @@
         {
             "tag": "insult",
             "patterns": [
-                
                 "you are dumb",
-                
                 "shut up",
                 "idiot"
             ],
@@ -367,17 +354,6 @@
         },
         
         {
-            "tag": "weather",
-            "patterns": [
-                "temperature",
-                "weather",
-                "how hot is it"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
             "tag": "giaheo",
             "patterns": [
                 "gia heo?",
@@ -388,7 +364,7 @@
             "responses": [
                 "Đây là biệt danh của một người, có thể tôi biết <a target='_blank' href ='https://github.com/giahe0'>Gia Heo</a>"
             ],
-	    "context": [
+            "context": [
                 "heo"
             ]
         },
@@ -399,20 +375,20 @@
                 "contact giaheo",
                 "contact programmer",
                 "contact creator"
-	    ],
+            ],
             "responses": [
                 "You can contact my creator at <a href=mailto:2011549769@nttu.edu.vn?subject='hỗ trợ Chatbot'>here</a> or his Facebook profile : <a target='_blank' href='https://www.facebook.com/gia.heo'>Gia Huy</a>."
             ]
         },
-	{
+        {
             "tag": "lienhe",
             "patterns": [
                 "liên hệ",
                 "liên hệ với nhà phát triển",
                 "liên hệ với lập trình viên",
                 "liên hệ gặp ai?",
-		        "liên hệ với ai?"
-	    ],
+                "liên hệ với ai?"
+            ],
             "responses": [
                 "Bạn có thể liên hệ người sáng tạo tại <a href='mailto:<giaheo>2011549769@nttu.edu.vn?subject='hỗ trợ Chatbot''>đây</a> hoặc qua Facebook của anh ấy : <a target='_blank' href='https://www.facebook.com/gia.heo'>Gia Huy</a>. "
             ]
@@ -471,22 +447,22 @@
                 "Personally, I find Ironman very inspiring. I might not be very fair though.."
             ]
         },
-	{
+        {
             "tag": "ai",
             "patterns": [
                 "who is...?",
                 "who the...?",
                 "who is the best ?",
-		        "người đó là ai?",
-		        "Ai là    ?",
-		        "là ai    ?"
+                "người đó là ai?",
+                "Ai là    ?",
+                "là ai    ?"
             ],
             "responses": [
-                "Tôi không chắc là tôi biết, nhưng tôi có thể tìm kiếm trên <a target='_blank' href='https://www.google.com/'>google</a> cho bạn..\nHoặc nhập 'google: nội dung tìm kiếm của bạn'."
+                "Tôi không chắc là tôi biết, nhưng tôi có thể tìm kiếm trên <a target='_blank' href='https://www.google.com/'>google</a> cho bạn..<br>Hoặc nhập 'google: nội dung tìm kiếm của bạn'."
             ],
-	    "context": [
+            "context": [
                 "who",
-		        "là ai"
+                "là ai"
             ]
         },
         {
@@ -518,7 +494,8 @@
                 "i am good",
                 "I'm good",
                 "i am fine",
-                " i'm fine","good"
+                " i'm fine",
+                "good"
             ],
             "responses": [
                 "Good to know!"
@@ -527,24 +504,28 @@
         {
             "tag": "timer",
             "patterns": [
-                "set a timer"
+                "đặt báo thức","báo thức","bao thuc",
+                "set timer"
             ],
             "responses": [
-                "..."
+                "Có phải bạn đang muốn đặt báo thức ? <br> Hãy nhập : 'set timer: số giây muốn đặt'."
             ]
         },
-        
         {
             "tag": "suggest",
             "patterns": [
-                "you are useless","useless","suggest","suggestions","you are bad"
+                "you are useless",
+                "useless",
+                "suggest",
+                "suggestions",
+                "you are bad"
             ],
             "responses": [
                 "Please mail your suggestions to 2011549769@nttu.edu.vn. Thank you for helping me improve!"
             ]
         },
         {
-	    "tag": "riddle",
+            "tag": "riddle",
             "patterns": [
                 "Ask me a riddle",
                 "Ask me a question",
@@ -565,8 +546,8 @@
                 "riddles"
             ]
         },
-	{
-	    "tag": "câuđố",
+        {
+            "tag": "câuđố",
             "patterns": [
                 "hỏi tôi một câu đố",
                 "hỏi tôi điều gì đó?",
@@ -589,52 +570,365 @@
         {
             "tag": "age",
             "patterns": [
-                "how old are you","when were you made","what is your age"
+                "how old are you",
+                "when were you made",
+                "what is your age"
             ],
             "responses": [
                 "I was made in 2023, if that's what you are asking!"
             ]
         },
-	{
+        {
             "tag": "gioithieu",
             "patterns": [
-                "nguyễn tất thành","giới thiệu đại học nguyễn tất thành","đại học nguyễn tất thành",
-		        "nguyễn tất thành university","information Nguyễn tất thành university"
+                "nguyễn tất thành",
+                "giới thiệu đại học nguyễn tất thành",
+                "đại học nguyễn tất thành",
+                "nguyễn tất thành university",
+                "information Nguyễn tất thành university"
             ],
             "responses": [
                 "Trường ĐH Nguyễn Tất Thành là “trường đại học đổi mới sáng tạo” đáp ứng nhu cầu giáo dục đại học đại chúng thông qua việc tạo lập một môi trường học tập tích cực và trải nghiệm thực tiễn cho mọi sinh viên trang bị cho người học năng lực tự học tinh thần sáng tạo khởi nghiệp có trách nhiệm với cộng đồng hội nhập với khu vực và toàn cầu."
             ]
         },
-	{
+        {
             "tag": "cackhoa",
             "patterns": [
-                "Liệt kê các khoa","Gồm những khoa nào?","ĐH Nguyễn tất thành có khoa nào",
-		        "ĐH Nguyễn Tất Thành dạy những gì?"
+                "Liệt kê các khoa",
+                "Gồm những khoa nào?",
+                "ĐH Nguyễn tất thành có khoa nào",
+                "ĐH Nguyễn Tất Thành dạy những gì?","đó là khoa gì ?",
+                "đó là khoa nào ?","khoa gì ?"
+
             ],
             "responses": [
-                "Đây là một số Khoa\nKhoa Dược\nKhoa Y\nKhoa Điều dưỡng\nKhoa Kỹ thuật Xét nghiệm Y học\nKhoa Công nghệ sinh học\nKhoa Công nghệ Sinh học\nKhoa Kỹ thuật Công nghệ\nKhoa Kiến trúc Nội thất\nKhoa Kỹ thuật Xây dựng...v.v"
+                "Đây là một số Khoa<br>Khoa Dược<br>Khoa Y<br>Khoa Điều dưỡng<br>Khoa Kỹ thuật Xét nghiệm Y học<br>Khoa Công nghệ sinh học<br>Khoa Công nghệ thông tin<br>Khoa Kỹ thuật Công nghệ<br>Khoa Kiến trúc Nội thất<br>Khoa Kỹ thuật Xây dựng...v.v"
             ]
         },
-	{
+        {
             "tag": "khoavien",
             "patterns": [
-                "ĐH Nguyễn Tất Thành có mấy khoa","Các khoa của ĐH Nguyễn tất thành","ĐH nguyễn tất thành gồm các khoa nào",
-		        "Faculties of nguyễn tất thành university","faculties","Có bao nhiêu giảng viên"
+                "ĐH Nguyễn Tất Thành có mấy khoa",
+                "Các khoa của ĐH Nguyễn tất thành",
+                "ĐH nguyễn tất thành gồm các khoa nào",
+                "Faculties of nguyễn tất thành university",
+                "faculties",
+                "có bao nhiêu khoa ?","gồm khoa nào ?"
+
             ],
             "responses": [
-                "Đại học Nguyễn Tất Thành có 21 khoa",
-		        "Có 1179 giảng viên, trong đó 792 giảng viên có bằng Thạc sỹ và 320 giảng viên có bằng tiến sỹ."
+                "Đại học Nguyễn Tất Thành có 21 khoa"
+                
             ]
         },
-	{
+        {
+            "tag": "giangvien",
+            "patterns": [
+                "ĐH Nguyễn Tất Thành bao nhiêu giảng viên",
+                "giảng viên của ĐH Nguyễn tất thành",
+                "giảng viên ?","gồm giảng viên ?",
+                "bao nhiêu giảng viên",
+                "Có bao nhiêu giảng viên"
+
+            ],
+            "responses": [
+                "Có 1179 giảng viên, trong đó 792 giảng viên có bằng Thạc sỹ và 320 giảng viên có bằng tiến sỹ."
+            ]
+        },
+        {
             "tag": "tuổi",
             "patterns": [
-                "Bạn bao nhiêu tuổi?","Bạn sinh ra khi nào?","Tuổi của bạn là bao nhiêu?",
-		        "Bạn được tạo ra khi nào?"
+                "Bạn bao nhiêu tuổi?",
+                "Bạn sinh ra khi nào?",
+                "Tuổi của bạn là bao nhiêu?",
+                "Bạn được tạo ra khi nào?"
             ],
             "responses": [
                 "Tôi được tạo ra năm 2023, nếu đó là những gì bạn muốn hỏi!"
             ]
-        }
+        },
+        {
+            "tag": "dathang",
+            "patterns": [
+                "Tôi muốn đặt một chiếc bánh pizza",
+                "Bạn có thể giúp tôi đặt một cuốn sách không?",
+                "Tôi muốn mua một chiếc áo sơ mi mới"
+            ],
+            "responses": [
+                "Chắc chắn, tôi có thể giúp bạn đặt hàng.",
+                "Bạn muốn đặt hàng từ trang web nào?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "phimanh",
+            "patterns": [
+                "Bạn có thể đề xuất một bộ phim hay không?",
+                "Tôi đang tìm kiếm một bộ phim hành động hay",
+                "Bạn biết bộ phim nào đáng xem không?"
+            ],
+            "responses": [
+                "Có rất nhiều bộ phim tuyệt vời mà tôi có thể đề xuất.",
+                "Bạn thích thể loại phim nào?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noisock",
+            "patterns": [
+                "mày ngu thế", "đần", "dốt","đúng rồi đấy","Đánh nhau không?","láo","md","gà"
+            ],
+            "responses": [
+                "Nếu cậu nghĩ tớ ngu, thì đi chỗ khác chơi nhé.",
+                "Bạn nghĩ bạn giỏi hơn tôi?","Bạn là nhất...!!!","Tôi không được lập trình để toxic với bạn :3"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "lover",
+            "patterns": [
+                "có người yêu chưa","ai là người yêu của bạn?"
+            ],
+            "responses": [
+                "Chưa tớ vẫn đang đi tìm..",
+                "Tớ chưa, thế còn bạn ?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "lovers",
+            "patterns": [
+                "tôi không có người yêu..",
+                "không ai yêu tôi cả? ",
+                "mình chưa có","tôi chưa có :(","tớ chưa :(","tớ chưa","mình chưa :(","mình chưa có :(",
+                "Tôi chưa có người yêu","tôi độc thân lâu rồi","ế","FA","tôi vẫn FA","Tôi vẫn ế"
+            ],
+            "responses": [
+                "Ngoại hình của bạn trông tệ ư?",
+                "Không sao cả vì đã có tớ đây....^^!",
+                "Bạn còn có gia đình cơ mà...","Rồi bạn sẽ sớm tìm được thôi..đừng bi quan nhé !"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "love",
+            "patterns": [
+                "tôi có người yêu..","mình có rồi","tớ có rồi",
+                "tôi có ny rồi ",
+                "vợ","tôi có con luôn rồi","người yêu tôi đẹp lắm","có rồi nè","tôi không độc thân",
+                "tôi không cô đơn","cô đơn","độc thân","tớ không cô đơn","tớ không độc thân","tớ có người yêu rồi","tớ có ny rồi","mình có ny rồi","mình có người yêu rồi"
+            ],
+            "responses": [
+                "Thật tuyệt vời đấy..!!",
+                "Chắc chắn là phải thật hạnh phúc đấy !!",
+                "Tuyệt thế còn gì bằng :D","Woaaahhhh...Chúc mừng bạn nhé!"
+            ],
+            "context": [
+                ""
+            ]
+        },
+          {
+            "tag": "thoitiet",
+            "patterns": [
+                "thời tiết hôm nay?",
+                "thời tiết ?",
+                "nhiệt độ",
+                "tell me the weather",
+                "day",
+                "How weather is today","weather","weather ?"
+                
+            ],
+            "responses": [
+                "Weather..."
+            ]
+        },
+        {
+          "tag": "TTDaihocNTT",
+          "patterns": [
+              "ai là hiệu trưởng của trường ?",
+              "Hiệu trưởng của trường là ai?",
+              "biết hiệu trưởng ĐH Nguyễn Tất Thành không?",
+              "ĐH nguyễn tất thành ai đang là hiệu trưởng",
+              "hiệu trưởng là ai?",
+              "thế biết hiệu trưởng của trường không?"
+              
+          ],
+          "responses": [
+              "Dĩ nhiên rồi...Hiệu trưởng của ĐH Nguyễn Tất Thành là : TS.Trần Ái Cầm "
+          ],
+          "context":[ "hiệu trưởng"]
+      },
+      {
+        "tag": "PHTNTT",
+        "patterns": [
+            "ai là phó hiệu trưởng của trường ?",
+            "phó Hiệu trưởng của trường là ai?",
+            "biết phó hiệu trưởng ĐH Nguyễn Tất Thành không?",
+            "ĐH nguyễn tất thành ai đang là phó hiệu trưởng",
+            "phó hiệu trưởng là ai?",
+            "thế còn phó hiệu trưởng của trường ?"
+            
+        ],
+        "responses": [
+            "Là Ông : GS.TS.Nguyễn Văn Thanh.","Là Bà : PGS.TS.Trần Thị Hồng.",
+            "Là Ông : TS.Nguyễn Tuấn Anh.","Là Ông : TS.Hoàng Hữu Dũng.",
+            "Là Bà : TS.Nguyễn Lan Phương."
+        ],
+        "context":["phó hiệu trưởng","hiệu phó"]
+    },
+    {
+        "tag": "TKNTT",
+        "patterns": [
+            "Nguyễn Kim Quốc là ai ?",
+            "ai là Nguyễn Kim Quốc ?"
+        ],
+        "responses": [
+            "Trưởng Khoa Công Nghệ Thông Tin của ĐH Nguyễn Tất Thành"
+        ],
+        "context":["nguyễn kim quốc"]
+    },
+    {
+        "tag": "PTKNTT",
+        "patterns": [
+            "Phan Công Vinh là ai ?",
+            "ai là Phan Công Vinh ?"
+        ],
+        "responses": [
+            "Phó Trưởng Khoa Công Nghệ Thông Tin của ĐH Nguyễn Tất Thành"
+        ],
+        "context":["Phan Công Vinh"]
+    },
+    {
+        "tag": "KHCB",
+        "patterns": [
+            "cô lê thị nhẫn","thầy cao văn kiên","cô Đỗ thị thanh diệu",
+            "thầy nguyễn thiện luận","cô nguyễn huế tiên","cô Lê thị mai thanh","thầy bùi hùng vương",
+            "thầy phạm nguyễn nhật khanh","cô nguyễn hoàng yến","thầy nguyễn công nhựt"
+        ],
+        "responses": [
+            "Giảng viên bộ môn Khoa Học Công Nghệ của ĐH Nguyễn Tất Thành."
+        ],
+        "context":["lê thị nhẫn","cao văn kiên","Đỗ thị thanh diệu",
+                    "nguyễn thiện luận","nguyễn huế tiên","Lê thị mai thanh","bùi hùng vương",
+                    "phạm nguyễn nhật khanh","nguyễn hoàng yến","nguyễn công nhựt"]
+    },
+    {
+        "tag": "KHMT",
+        "patterns": [
+            "thầy Lê Mậu Long","thầy Nguyễn Anh Linh","thầy Lê Văn Tấn","cô Thái Trúc Nhi",
+            "thầy Nguyễn Văn Hán","thầy Bùi Duy Tân","thầy Nguyễn Mai Huy","thầy Đinh Văn Tuyến",
+            "cô Đinh Thị Hồng Loan","thầy Trần Thanh Phú"
+        ],
+        "responses": [
+            "Giảng viên bộ môn Khoa Học Máy Tính của ĐH Nguyễn Tất Thành."
+        ],
+        "context":["thầy Lê Mậu Long","thầy Nguyễn Anh Linh","thầy Lê Văn Tấn","cô Thái Trúc Nhi",
+        "thầy Nguyễn Văn Hán","thầy Bùi Duy Tân","thầy Nguyễn Mai Huy","thầy Đinh Văn Tuyến",
+        "cô Đinh Thị Hồng Loan","thầy Trần Thanh Phú"]
+    },
+    {
+        "tag": "TTNTao",
+        "patterns": [
+            "thầy Đặng Như Phú","thầy Hà Minh Tân","thầy Phạm Hữu Thành","thầy Phạm Thanh Bình","thầy Trần Tấn Lộc",
+            "thầy Nguyễn Phi Thái","thầy Võ Đức Thắng","thầy Nguyễn Kim Sơn"
+        ],
+        "responses": [
+            "Giảng viên bộ môn Trí Tuệ Nhân Tạo của ĐH Nguyễn Tất Thành."
+        ],
+        "context":["thầy Đặng Như Phú","thầy Hà Minh Tân","thầy Phạm Hữu Thành","thầy Phạm Thanh Bình","thầy Trần Tấn Lộc",
+        "thầy Nguyễn Phi Thái","thầy Võ Đức Thắng","thầy Nguyễn Kim Sơn"]
+    },
+    {
+        "tag": "KHDL",
+        "patterns": [
+            "thầy Vương Xuân Chí","cô Phan Thị Huyền Trang","cô Võ Thị Hồng Thắm","thầy Phạm Đình Tài",
+            "thầy Hồ Khôi","thầy Lê Trọng Tín","thầy Lê Võ Minh Nguyên","thầy Nguyễn Quang Kỳ","cô Nguyễn Thị Yến"
+        ],
+        "responses": [
+            "Giảng viên bộ môn Khoa Học Dữ Liệu của ĐH Nguyễn Tất Thành."
+        ],
+        "context":["thầy Vương Xuân Chí","cô Phan Thị Huyền Trang","cô Võ Thị Hồng Thắm","thầy Phạm Đình Tài",
+        "thầy Hồ Khôi","thầy Lê Trọng Tín","thầy Lê Võ Minh Nguyên","thầy Nguyễn Quang Kỳ","cô Nguyễn Thị Yến"]
+    },
+    {
+        "tag": "KTPM",
+        "patterns": [
+            "thầy Phạm Văn Đăng","thầy Lê Mạnh","thầy Bùi Tiến Đức","thầy Nguyễn Xuân Cường",
+            "thầy Đỗ Hoàng Nam","thầy Giang Hào Côn","thầy Trần Đức Hiếu","thầy Nguyễn Văn Thìn","thầy Trần Quốc Việt"
+        ],
+        "responses": [
+            "Giảng viên bộ môn Kỹ Thuật Phần Mềm của ĐH Nguyễn Tất Thành."
+        ],
+        "context":["thầy Phạm Văn Đăng","thầy Lê Mạnh","thầy Bùi Tiến Đức","thầy Nguyễn Xuân Cường",
+        "thầy Đỗ Hoàng Nam","thầy Giang Hào Côn","thầy Trần Đức Hiếu","thầy Nguyễn Văn Thìn","thầy Trần Quốc Việt"]
+    },
+    {
+        "tag": "MMTTT",
+        "patterns": [
+            "thầy Nguyễn Văn Thành","thầy Vũ Văn Hiệp","thầy Dương Minh Tuấn","thầy Phan Quốc Bảo",
+            "cô Nguyễn Thị Phong Dung","thầy Nguyễn Phi Thái","thầy Nguyễn Mạnh Cường","thầy Ngô Văn Toàn"
+        ],
+        "responses": [
+            "Giảng viên bộ môn Mạng Máy Tính Và Truyền Thông của ĐH Nguyễn Tất Thành."
+        ],
+        "context":["thầy Nguyễn Văn Thành","thầy Vũ Văn Hiệp","thầy Dương Minh Tuấn","thầy Phan Quốc Bảo",
+        "cô Nguyễn Thị Phong Dung","thầy Nguyễn Phi Thái","thầy Nguyễn Mạnh Cường","thầy Ngô Văn Toàn"]
+    },
+    {
+        "tag": "lucbat",
+        "patterns": [
+            "thơ lục bát","tạo một đoạn thơ lục bát","tạo thơ lục bát","lục bát",
+            "viết một câu thơ lục bát","viết một đoạn thơ lục bát"
+        ],
+        "responses": [
+            "<p style=\"text-align:center\">Người đi theo gió đuổi mây,<br>Tôi buồn nhặt nhạnh tháng ngày lãng quên<br>Em theo hú bóng kim tiền<br>Bần thần tôi ngẫm triền miên thói đời.</p>",
+            "<p style=\"text-align:center\">Vườn xuân hoa nở muôn màu<br>Tỏa hương thơm ngát dạt dào ngất ngây<br>Ong vờn bướm lượn vui say<br>Thi nhân ghé lại tháng ngày lãng quên.</p>",
+            "<p style=\"text-align:center\">Ta về mách với mùa thu<br>Có người lẩn thẩn đang ru tóc thề<br>Ta đi mách với nắng hè<br>Có người tiếc tuổi hát về mùa xuân.</p>",
+            "<p style=\"text-align:center\">Từ nay tôi đã có người<br>Có em đi đứng bên đời líu lo.</p>",
+            "<p style=\"text-align:center\">Đôi khi lỡ hẹn một giờ<br>Lần sau muốn gặp phải chờ trăm năm.</p>",
+            "<p style=\"text-align:center\">Người ơi trong cõi phiêu bồng<br>Chỉ xin giữ lấy tấm lòng thủy chung.</p>",
+            "<p style=\"text-align:center\">Người ơi gặp gỡ làm chi<br>Trăm năm biết có duyên gì hay không.</p>",
+            "<p style=\"text-align:center\">Câu thơ cùng với gạo tiền<br>Nhìn tôi như thể muộn phiền điều chi.</p>",
+            "<p style=\"text-align:center\">Mặt trăng cùng với mặt trời<br>Là hai bản mặt, mặt người nữa ba.</p>",
+            "<p style=\"text-align:center\">Người từ vô tận tái sinh<br>Đi qua trần thế mang tình nhân gian.</p>",
+            "<p style=\"text-align:center\">Tình bạn là những vần thơ<br>Tối về đắp gối ngâm quơ vài lời.</p>",
+            "<p style=\"text-align:center\">Rủ nhau xuống biển mò cua<br>Đem về nấu quả mơ chua trên rừng<br>Ai ơi chua ngọt đã từng<br>Gừng cay muối mặn xin đừng quên nhau.</p>"
+            
+        ],
+        "context": ["lục bát"]
+    },
+    {
+        "tag": "tho",
+        "patterns": [
+            "thơ ?","tạo thơ","tạo một câu thơ ngắn","thơ ngắn",
+            "viết một câu thơ","thơ 2 câu"
+        ],
+        "responses": [
+            "<p style=\"text-align:center\">Đủ nắng hoa sẽ nở<br>Đủ yêu thương hạnh phúc sẽ đong đầy.</p>",
+            "<p style=\"text-align:center\">Người bi quan lo lắng cả đời<br>Người lạc quan thì dù thế nào cũng gặp may mắn.</p>",
+            "<p style=\"text-align:center\">Cảm ơn đời mỗi sớm mai thức dậy<br>Ta có thêm ngày nữa để yêu thương.</p>",
+            "<p style=\"text-align:center\">Nơi nào có ý chí<br>Nơi đó có con đường.</p>",
+            "<p style=\"text-align:center\">Thấy không cây lá còn cười<br>Huống chi ta phải làm người buồn thiu.</p>",
+            "<p style=\"text-align:center\">Thở đi nhẹ một kiếp người<br>Vui đi để có nụ cười thênh thang.</p>",
+            "<p style=\"text-align:center\">Người ơi gặp gỡ làm chi<br>Trăm năm biết có duyên gì hay không.</p>",
+            "<p style=\"text-align:center\">Câu thơ cùng với gạo tiền<br>Nhìn tôi như thể muộn phiền điều chi.</p>",
+            "<p style=\"text-align:center\">Mặt trăng cùng với mặt trời<br>Là hai bản mặt, mặt người nữa ba.</p>",
+            "<p style=\"text-align:center\">Người từ vô tận tái sinh<br>Đi qua trần thế mang tình nhân gian.</p>",
+            "<p style=\"text-align:center\">Tình bạn là những vần thơ<br>Tối về đắp gối ngâm quơ vài lời.</p>"
+            
+        ],
+        "context": ["thơ 2 câu"]
+    }
+    
     ]
 }
